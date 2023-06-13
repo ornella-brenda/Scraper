@@ -16,7 +16,7 @@ Avant d'exécuter l'application, assurez-vous d'avoir les éléments suivants in
 # Configuration
 - Recherchez le fichier "Configuration" dans le repertoire.
 - 
-_NB: vvous avez besoin du fihier code.py et du dossier "templates" du repertoire pour que l'interface s'exécute et s'affiche normalement._
+_NB: vous avez besoin du fihier code.py et du dossier "templates" du repertoire pour que l'interface s'exécute et s'affiche normalement._
 
 # Exécution
 - Dans la console/terminal avec python, exécutez le fichier code.py
