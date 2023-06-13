@@ -15,7 +15,7 @@ Avant d'exécuter l'application, assurez-vous d'avoir les éléments suivants in
 
 # Configuration
 - Rechercher et ouvrir le fichier "Config" du repertoire.
-- 
+
 _NB: vous avez besoin du fihier code.py et du dossier "templates" du repertoire pour que l'interface s'exécute et s'affiche normalement._
 
 # Exécution
