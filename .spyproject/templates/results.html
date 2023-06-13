@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Scraper Results</title>
+    <style>
+        /* Insérez le CSS ici */
+     body {
+  font-family: Arial, sans-serif;
+  background-color: #2b2e4a;
+  padding: 20px;
+  color: #fff;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  margin-top: 50px;
+}
+
+h2 {
+  color: #f9c784;
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li:before {
+  content: "➜ ";
+  color: #f9c784;
+  animation: moveIcon 1s infinite;
+}
+
+.return-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.return-button a {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.return-button a:hover {
+    background-color: #555;
+}
+
+@keyframes moveIcon {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Résultats du scraping :</h1>
+    {% if phone_numbers %}
+    <h2>Numéros de téléphone français :</h2>
+    <ul>
+        {% for phone_number in phone_numbers %}
+            <li>{{ phone_number }}</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>Pas de numéro de téléphone trouvé sur ce site web.</p>
+    {% endif %}
+    {% if emails %}
+    <h2>Adresses e-mail :</h2>
+    <ul>
+        {% for email in emails %}
+            <li>{{ email }}</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>Pas d'adresse e-mail trouvée sur ce site web.</p>
+    {% endif %}
+    {% if not phone_numbers and not emails %}
+    <p>Aucun numéro de téléphone ni adresse e-mail trouvée sur ce site web.</p>
+    {% endif %}
+    
+    <div class="center">
+      <a href="/">Retourner à la page d'accueil</a>
+    </div>  
+    
+</body>
+</html>
