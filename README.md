@@ -14,7 +14,7 @@ Avant d'exécuter l'application, assurez-vous d'avoir les éléments suivants in
 - Ouvrez une console/terminal et accédez au répertoire du projet.
 
 # Configuration
-- Recherchez le fichier "Configuration" dans le repertoire.
+- Rechercher et ouvrir le fichier "Config" du repertoire.
 - 
 _NB: vous avez besoin du fihier code.py et du dossier "templates" du repertoire pour que l'interface s'exécute et s'affiche normalement._
 
